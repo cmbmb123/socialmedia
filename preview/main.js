@@ -299,7 +299,7 @@ $(function() {
     $('#final-continue').on('click', function() {
 
       // Redirect link
-      location.href = 'http://fppvu.qualtrics.com/SE/?SID='+settings.qualtricsid+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
+      location.href = 'https://fppvu.qualtrics.com/SE/?SID='+settings.qualtricsid+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
 
     });
     
@@ -331,7 +331,7 @@ $(function() {
   }
 
   // The variable QueryString contains the url parameters, i.e. condition no. and participant no.
-  // via http://stackoverflow.com/a/979995
+  // via https://stackoverflow.com/a/979995
   window.QueryString = function () {
     var query_string = {};
     var query = window.location.search.substring(1);
@@ -355,7 +355,7 @@ $(function() {
 
 
   // Function to check letters and numbers
-  // via http://www.w3resource.com/javascript/form/letters-numbers-field.php
+  // via https://www.w3resource.com/javascript/form/letters-numbers-field.php
   function not_alphanumeric(inputtxt) {
     var letterNumber = /^[0-9a-zA-Z]+$/;
     if(inputtxt.match(letterNumber)) {
@@ -367,14 +367,14 @@ $(function() {
 
 
   // Function to add extra zeros infront of numbers (used for the countdown)
-  // via http://stackoverflow.com/a/6466243
+  // via https://stackoverflow.com/a/6466243
   function pad (str, max) {
     return str.length < max ? pad("0" + str, max) : str;
   }
 
 
   // Simple Countdown
-  // via http://davidwalsh.name/jquery-countdown-plugin
+  // via https://davidwalsh.name/jquery-countdown-plugin
   jQuery.fn.countDown = function(settings,to) {
     settings = jQuery.extend({
       startFontSize: "12px",
